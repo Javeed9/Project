@@ -1,10 +1,7 @@
-import streamlit as st    # for building the app UI
+import streamlit as st
 
 
-def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-! git clone https://github.com/Javeed9/Project.git
+!git clone https://github.com/Javeed9/Project.git
 !pip install llama-index
 !pip install langchain
 
