@@ -6,6 +6,14 @@ import json               # for handling JSON data
 import requests           # for making HTTP requests
 import time               # for adding delays in the app
 import re                 # for regular expressions
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+# Install required packages
+install('nltk')
 import nltk
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
