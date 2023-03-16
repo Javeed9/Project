@@ -1,4 +1,12 @@
-import streamlit as st
+import streamlit as st    # for building the app UI
+import pandas as pd       # for handling data
+import numpy as np        # for scientific computing
+import os                 # for accessing the file system
+import json               # for handling JSON data
+import requests           # for making HTTP requests
+import time               # for adding delays in the app
+import re                 # for regular expressions
+import spacy              # for natural language processing tasks
 
 # Define the main function to run the Streamlit app
 def main():
