@@ -1,9 +1,11 @@
 import streamlit as st
 
 
-!git clone https://github.com/Javeed9/Project.git
-!pip install llama-index
-!pip install langchain
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+ 
+install(llama-index)
+install(langchain)
 
 from llama_index import SimpleDirectoryReader, GPTListIndex, readers, GPTSimpleVectorIndex, LLMPredictor, PromptHelper
 from langchain import OpenAI
