@@ -4,8 +4,8 @@ import streamlit as st
 def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
  
-install(llama-index)
-install(langchain)
+install("llama-index")
+install("langchain")
 
 from llama_index import SimpleDirectoryReader, GPTListIndex, readers, GPTSimpleVectorIndex, LLMPredictor, PromptHelper
 from langchain import OpenAI
