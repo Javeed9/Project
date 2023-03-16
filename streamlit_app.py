@@ -6,7 +6,13 @@ import json               # for handling JSON data
 import requests           # for making HTTP requests
 import time               # for adding delays in the app
 import re                 # for regular expressions
-import spacy              # for natural language processing tasks
+import nltk
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
+from nltk.corpus import wordnet as wn
 
 # Define the main function to run the Streamlit app
 def main():
